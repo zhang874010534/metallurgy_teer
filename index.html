@@ -1,14 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 </head>
+
 <body>
-  <div>
-    你好
+  <div id="app">
+    <!-- 头上的登录 -->
+    <header>
+      <div class="headerLogin">
+        <div>点击关注</div>
+        <el-menu default-active="1" class="el-menu-demo" mode="horizontal">
+          <el-menu-item index="1">处理中心</el-menu-item>
+          <el-submenu index="2">
+            <template slot="title">我的工作台</template>
+            <el-menu-item index="2-1">选项1</el-menu-item>
+            <el-menu-item index="2-2">选项2</el-menu-item>
+            <el-menu-item index="2-3">选项3</el-menu-item>
+            <el-submenu index="2-4">
+              <template slot="title">选项4</template>
+              <el-menu-item index="2-4-1">选项1</el-menu-item>
+              <el-menu-item index="2-4-2">选项2</el-menu-item>
+              <el-menu-item index="2-4-3">选项3</el-menu-item>
+            </el-submenu>
+          </el-submenu>
+          <el-menu-item index="3">消息中心</el-menu-item>
+          <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+        </el-menu>
+      </div>
+    </header>
+
+    <!-- 公司logo -->
+    <div class="logo">
+
+      <!-- 左 -->
+      <div class="logoLeft">
+        <!-- <img src="" alt=""> -->
+        <span>温州复新益空分机械有限公司</span>
+        <span>主营：压缩机配件,压缩机气阀,压缩机轴瓦,压缩机十字头,空分配件</span>
+      </div>
+
+      <!-- 右 -->
+      <div>
+        13506663109
+      </div>
+
+    </div>
+    <!-- 导航 -->
+    <nav class="nav">
+      <div class="navMenu">
+        <el-menu default-active="1" class="el-menu-demo" mode="horizontal" background-color="#000" text-color="#fff"
+          active-text-color="#fff">
+          <el-menu-item index="1">处理中心</el-menu-item>
+          <el-submenu index="2">
+            <template slot="title">我的工作台</template>
+            <el-menu-item index="2-1">选项1</el-menu-item>
+            <el-menu-item index="2-2">选项2</el-menu-item>
+            <el-menu-item index="2-3">选项3</el-menu-item>
+            <el-submenu index="2-4">
+              <template slot="title">选项4</template>
+              <el-menu-item index="2-4-1">选项1</el-menu-item>
+              <el-menu-item index="2-4-2">选项2</el-menu-item>
+              <el-menu-item index="2-4-3">选项3</el-menu-item>
+            </el-submenu>
+          </el-submenu>
+          <el-menu-item index="3">消息中心</el-menu-item>
+          <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+        </el-menu>
+      </div>
+    </nav>
+
+    <!-- 内容 -->
+    <main class="main">
+      <div style="background-color: pink; height: 50px;">放图片</div>
+
+      <!-- 面包屑 -->
+      <div class="bread">
+        <el-breadcrumb separator-class="el-icon-arrow-right">
+          <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+          <el-breadcrumb-item>活动管理</el-breadcrumb-item>
+          <el-breadcrumb-item>活动列表</el-breadcrumb-item>
+          <el-breadcrumb-item>活动详情</el-breadcrumb-item>
+        </el-breadcrumb>
+        <div>
+          <el-input placeholder="请输入内容" class="input-with-select">
+            <el-button slot="append" icon="el-icon-search"></el-button>
+          </el-input>
+        </div>
+      </div>
+      <!-- 卡片 -->
+      <div class="card">
+        <div class="cardLeft">
+          <el-card>
+            <div slot="header" class="clearfix">
+              <span>卡片名称</span>
+              <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+            </div>
+            <div>内容</div>
+            <div>内容</div>
+          </el-card>
+          <el-card>
+            <div slot="header" class="clearfix">
+              <span>卡片名称</span>
+              <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+            </div>
+            <div>内容</div>
+            <div>内容</div>
+          </el-card>
+        </div>
+        <div class="cardRight">
+          <el-card>
+            <div slot="header" class="clearfix">
+              <span>卡片名称</span>
+              <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+            </div>
+            <div>内容</div>
+            <div>内容</div>
+          </el-card>
+          <el-card>
+            <div slot="header" class="clearfix">
+              <span>卡片名称</span>
+              <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+            </div>
+            <div>内容</div>
+            <div>内容</div>
+          </el-card>
+          <el-card>
+            <div slot="header" class="clearfix">
+              <span>卡片名称</span>
+              <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+            </div>
+            <div>内容</div>
+            <div>内容</div>
+          </el-card>
+        </div>
+      </div>
+
+
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+      <div class="ft-left">
+        <span>主营产品</span>
+        <span>压缩机配件_压缩机气阀_压缩机轴瓦_压缩机十字头_空分配件</span>
+        <span>压缩机配件_压缩机气阀_压缩机轴瓦_压缩机十字头_空分配件</span>
+      </div>
+      <div class="ft-middle"></div>
+      <div class="ft-right"></div>
+    </footer>
+
+    <!-- 右边联系我们 -->
+    <div class="contact">
+      <el-button plain @click="open1">
+        联系我们
+      </el-button>
+    </div>
   </div>
+
+
+
+
+
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script>
+    var vm = new Vue({
+      el: '#app',
+      data() {
+        return {
+          a: 11
+        }
+      },
+      methods: {
+        open1() {
+          const h = this.$createElement;
+          this.$notify({
+            title: '标题名称',
+            message: h('i', { style: 'color: teal' }, '这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案')
+          });
+        }
+      }
+    })
+  </script>
 </body>
+
 </html>

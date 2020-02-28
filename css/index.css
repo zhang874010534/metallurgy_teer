@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  background-color: #F8F8F8;
+}
+
+.headerLogin {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logoLeft {
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  line-height: 33px;
+}
+
+.logoLeft span:first-child {
+  font-weight: 700;
+  font-size: 25px;
+}
+.nav{
+  background-color: #000;
+  margin-top: 20px;
+}
+.navMenu{
+  width: 1200px;
+  margin: 0 auto;
+}
+.main{
+  width: 1200px;
+  margin: 0 auto;
+}
+.bread{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.el-breadcrumb{
+  display: inline-block;
+}
+.el-card{
+  margin-top: 20px;
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+}
+.cardLeft{
+  width: 300px;
+}
+.cardRight{
+  flex-grow: 1;
+  margin-left: 40px;
+}
+
+.footer{
+  width: 1200px;
+  margin:0 auto;
+  margin-top: 30px;
+  color: #666;
+  line-height: 30px;
+}
+.footer div{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact{
+  position: fixed;
+  right:  0;
+  top: 50%;
+}
